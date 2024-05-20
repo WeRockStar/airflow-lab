@@ -20,9 +20,8 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 
 ## Lab Instructions
 
-1. What's Airflow?
+1. What's Airflow? - [chapter 1](docs/chapter-01/README.md)
    - Workflow Orchestration
-   - Data Orchestration
    - Data Pipeline
 2. Overview of Airflow UI and concepts
    - Airflow UI
