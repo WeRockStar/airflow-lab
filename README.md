@@ -41,7 +41,7 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
    - Define the tasks
    - Test the DAG
 4. Writing your second DAG - Multiple Tasks
-   - Create a new DAG with ``PythonOperator`
+   - Create a new DAG with `PythonOperator`
    - Define dependencies between tasks
    - Test the DAG
 5. Google Drive to GCS
