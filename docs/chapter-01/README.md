@@ -10,24 +10,24 @@ Workflow Orchestration is the process of triggering and monitoring the status of
 
 Process of moving data from one place to another, it can be transforming data, loading data, etc.
 
-Example 1: 
+Example 1:
 
-```mermaid
-graph TD
+```mermaid {"id":"01HYB7G78163BYDKA2K2KVZHGM"}
+graph LR
     A[Source] --> B[Destination]
 ```
 
 Example 2: ETL
 
-```mermaid
-graph TD
+```mermaid {"id":"01HYB7G78163BYDKA2K66VSWY6"}
+graph LR
     A[Extract] --> B[Transform] --> C[Load]
 ```
 
 Example 3: ETL with multiple sources
 
-```mermaid
-graph TD
+```mermaid {"id":"01HYB7G78163BYDKA2K9BJFKBP"}
+graph LR
     A[SharePoint] --> B[Transform] --> C[GCS]
     D[Google Drive] --> B
 ```
@@ -40,7 +40,7 @@ Airflow is Workflow Orchestration, specifically designed tp batch-oriented workf
 
 Allow you to define your workflows as code, which makes it easy to version control, test, and deploy.
 
-```python
+```python {"id":"01HYB7G78163BYDKA2K9JA8PCQ"}
 from datetime import datetime
 
 from airflow import DAG
