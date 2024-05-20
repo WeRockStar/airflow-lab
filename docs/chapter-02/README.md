@@ -7,6 +7,28 @@
 - **Metadata Database**: The Metadata Database is the persistent store for metadata related to the state of workflows and tasks in Airflow. The database, often referred to as the metadata database, also stores credentials, connections, history, and configuration.
 - **DAGs (Directed Acyclic Graphs)**: A DAG is a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies. A DAG’s definition is written in Python files that are placed in Airflow’s DAG_FOLDER.
 
+## Directed Acyclic Graphs (DAGs) ✅
+```mermaid
+graph TD;
+    A[DAG] --> B[Task1]
+    A --> C[Task2]
+    A --> D[Task3]
+    B --> E[Task4]
+    C --> E
+    D --> E
+```
+
+## Not DAGs ❌
+```mermaid
+graph TD;
+    A[Task1] --> B[Task2]
+    B --> C[Task3]
+    C --> A
+```
+
+## Mai Mee DAGs
+<img src="./meme.jpeg" width="80%">
+
 ## Airflow UI
 
 ```bash
