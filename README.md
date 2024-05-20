@@ -22,6 +22,7 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 1. What's Airflow? - [chapter 1](docs/chapter-01/README.md)
    - Workflow Orchestration
    - Data Pipeline
+
 2. Overview of Airflow UI and concepts  - [chapter 2](docs/chapter-02/README.md)
    - Airflow UI
       - Pause/Unpause
@@ -30,25 +31,31 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
       - Recent Tasks
       - DAG Runs
       - Graph View
+
    - DAGs
    - Operators
    - Tasks
+
 3. Writing your first DAG (Single Operator) - [chapter 3](docs/chapter-03/README.md)
    - Create a new DAG with `PythonOperator`
    - Define the schedule
    - Define the tasks
    - Test the DAG
+
 4. Writing your second DAG (Multiple Operators) - [chapter 4](docs/chapter-04/README.md)
    - Create a new DAG with `PythonOperator`
    - Define dependencies between tasks
    - Test the DAG
-5. Google Drive to GCS
+
+5. Google Drive to GCS - [chapter 5](docs/chapter-05/README.md)
    - Create a new DAG
    - Create a new connection for Google Drive via Service Account
    - Use `GoogleDriveToGCSOperator` to copy files from Google Drive to GCS
    - Test the DAG
-6. Working with `Sensor`
+
+6. Working with `Sensor` - [chapter 6](docs/chapter-06/README.md)
    - `GoogleDriveFileSensor` to wait for a file to be uploaded to Google Drive
-7. Scraping Data from Githubs to Postgres
+
+7. Scraping Data from Githubs to Postgres - [chapter 7](docs/chapter-07/README.md)
    - `SimpleHTTPOperator` to get data from Github API
    - `PostgresOperator` to insert data into Postgres
