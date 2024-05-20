@@ -12,9 +12,8 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 ## Getting Started
 
 1. Clone this repository
-2. Create `.env` file in the root directory
-3. Run `docker-compose up` to start the Airflow web server and scheduler
-4. Open `http://localhost:8080` in your browser and use the following credentials to log in:
+2. Run `docker-compose up` to start the Airflow web server and scheduler
+3. Open `http://localhost:8080` in your browser and use the following credentials to log in:
    - Username: `airflow`
    - Password: `airflow`
 
@@ -23,7 +22,7 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 1. What's Airflow? - [chapter 1](docs/chapter-01/README.md)
    - Workflow Orchestration
    - Data Pipeline
-2. Overview of Airflow UI and concepts
+2. Overview of Airflow UI and concepts  - [chapter 2](docs/chapter-02/README.md)
    - Airflow UI
       - Pause/Unpause
       - Trigger DAG
@@ -34,12 +33,12 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
    - DAGs
    - Operators
    - Tasks
-3. Writing your first DAG - Single Task
+3. Writing your first DAG (Single Operator) - [chapter 3](docs/chapter-03/README.md)
    - Create a new DAG with `PythonOperator`
    - Define the schedule
    - Define the tasks
    - Test the DAG
-4. Writing your second DAG - Multiple Tasks
+4. Writing your second DAG (Multiple Operators) - [chapter 4](docs/chapter-04/README.md)
    - Create a new DAG with `PythonOperator`
    - Define dependencies between tasks
    - Test the DAG
