@@ -39,6 +39,8 @@ Airflow is Workflow Orchestration, specifically designed tp batch-oriented workf
 
 Program wrokflows in Python, schedule them, and monitor them.
 
+<img src="dags.png" width="80%">
+
 ## Workflow as Code
 
 Allow you to define your workflows as code, which makes it easy to version control, test, and deploy.
@@ -62,6 +64,10 @@ with DAG(dag_id="demo", start_date=datetime(2022, 1, 1), schedule="0 0 * * *") a
     # Set dependencies between tasks
     hello >> airflow()
 ```
+
+## Airflow Use Cases
+
+<img src="./usecase.png" width="90%">
 
 ## When to use Airflow?
 
