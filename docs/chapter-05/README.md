@@ -4,7 +4,7 @@ Again, Airflow designed to batch-oreinted processing
 
 ## 1. Fixed Interval Schedule
 
-```python {"id":"01HYCK0CBJCTZPY8HCS5PV7B43"}
+```python
 from datetime import timedelta
 
 dag = DAG(
