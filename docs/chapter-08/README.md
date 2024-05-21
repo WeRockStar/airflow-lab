@@ -75,7 +75,7 @@ with DAG('github_to_postgres', start_date=datetime(2024, 1, 1), catchup=False) a
         sql="""
                 CREATE TABLE IF NOT EXISTS github_users (
                 id SERIAL PRIMARY KEY,
-                name VARCHAR NOT NULL UNIQUE,
+                name VARCHAR NOT NULL,
                 avatar_url VARCHAR NOT NULL
                 )
               """,
@@ -117,3 +117,4 @@ with DAG('github_to_postgres', start_date=datetime(2024, 1, 1), catchup=False) a
 ```
 
 [Back to Root](../../README.md)
+[Go Next](../chapter-09/README.md)

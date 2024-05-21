@@ -63,3 +63,5 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 
    - `SimpleHTTPOperator` to get data from Github API
    - `PostgresOperator` to insert data into Postgres
+9. Trigger Other DAGs - [chapter 9](docs/chapter-09/README.md)
+   - Trigger a DAG from another DAG
