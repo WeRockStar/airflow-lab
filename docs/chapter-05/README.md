@@ -4,7 +4,7 @@ Again, Airflow designed to batch-oreinted processing
 
 ## 1. Fixed Interval Schedule
 
-```python
+```python {"id":"01HYCQ6TM1PC4C06T3TCJ67CYM"}
 from datetime import timedelta
 
 dag = DAG(
@@ -19,7 +19,7 @@ dag = DAG(
 
 For example, '0 0 * * *' would schedule the DAG to run daily at midnight
 
-```python
+```python {"id":"01HYCQ6TM1PC4C06T3TEQE3QXF"}
 dag = DAG(
     'my_dag',
     default_args=default_args,
@@ -38,9 +38,9 @@ Airflow provides some preset schedules you can use with the `schedule_interval` 
 - `@weekly`: Run the DAG every week
 - `@monthly`: Run the DAG every month
 - `@yearly`: Run the DAG every year
-- `None`: Don't schedule the DAG, use to trigger it with external triggers or manually run 
+- `None`: Don't schedule the DAG, use to trigger it with external triggers or manually run
 
-```python
+```python {"id":"01HYCQ6TM1PC4C06T3TEYTTXNG"}
 dag = DAG(
     'my_dag',
     default_args=default_args,
@@ -50,3 +50,4 @@ dag = DAG(
 ```
 
 [Back to Root](../../README.md)
+[Go to Next](../chapter-06/README.md)
