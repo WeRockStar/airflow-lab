@@ -38,6 +38,15 @@ Airflow provides some preset schedules you can use with the `schedule_interval` 
 - `@weekly`: Run the DAG every week
 - `@monthly`: Run the DAG every month
 - `@yearly`: Run the DAG every year
-- `None`: Don't schedule the DAG, use to trigger it with external triggers or manually run it
+- `None`: Don't schedule the DAG, use to trigger it with external triggers or manually run 
+
+```python
+dag = DAG(
+    'my_dag',
+    default_args=default_args,
+    description='A simple DAG',
+    schedule_interval='@daily',
+)
+```
 
 [Back to Root](../../README.md)
