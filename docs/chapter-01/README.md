@@ -10,7 +10,7 @@ Workflow Orchestration is the process of triggering and monitoring the status of
 
 Process of moving data from one place to another, it can be transforming data, loading data, etc.
 
-Example 1:
+Example 1: Source -> Destination
 
 ```mermaid {"id":"01HYB7G78163BYDKA2K2KVZHGM"}
 graph LR
