@@ -1,3 +1,3 @@
 # Working with Sensor
 
-[Back to Root](../chapter-06/README.md)
+[Back to Root](../../README.md)
