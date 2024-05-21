@@ -109,7 +109,7 @@ with DAG(dag_id='second_dag', start_date=datetime(2024, 5, 10), catchup=False) a
     run_this >> run_again >> check_me
     check_me >> run_me
     check_me >> run_me_too
-
+```
 ## 8. Optional - Add more operators
 
 Note: Refresh and See Graph View
@@ -157,6 +157,7 @@ with DAG(dag_id='second_dag', start_date=datetime(2024, 5, 10), catchup=False) a
     run_this >> run_again >> check_me
     check_me >> run_me >> stop_here
     check_me >> run_me_too >> stop_here
+```
 ```
 
 [Back to Root](../../README.md)
