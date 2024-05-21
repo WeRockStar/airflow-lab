@@ -63,4 +63,4 @@ password: airflow
 - **Operator**: An Operator is `a class that acts as a template for carrying out some work`. Most Operators require a DAG object in their constructor. The DAG defines the task and the dependencies between tasks.
 
 [Back to Root](../../README.md)
-[Go to Next](../chapter-03/README.md)
+[Go Next](../chapter-03/README.md)

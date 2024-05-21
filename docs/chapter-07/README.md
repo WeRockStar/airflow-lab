@@ -75,4 +75,4 @@ detect_file >> sync_drive_to_gcs
 ```
 
 [Back to Root](../../README.md)
-[Go to Next](../chapter-08/README.md)
+[Go Next](../chapter-08/README.md)

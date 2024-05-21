@@ -11,6 +11,7 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 
 ## Lab Instructions
 
+0. Enable Test Connect - [chapter 0](docs/chapter-0/README.md)
 1. What's Airflow? - [chapter 1](docs/chapter-01/README.md)
 
    - Workflow Orchestration

@@ -78,4 +78,4 @@ with DAG(dag_id="demo", start_date=datetime(2022, 1, 1), schedule="0 0 * * *") a
 3. Little or no Python experience
 
 [Back to Root](../../README.md)
-[Go to Next](../chapter-02/README.md)
+[Go Next](../chapter-02/README.md)

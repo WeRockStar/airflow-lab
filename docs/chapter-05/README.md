@@ -50,4 +50,4 @@ dag = DAG(
 ```
 
 [Back to Root](../../README.md)
-[Go to Next](../chapter-06/README.md)
+[Go Next](../chapter-06/README.md)
