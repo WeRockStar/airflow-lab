@@ -43,19 +43,19 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
    - Create a new DAG with `PythonOperator`
    - Define dependencies between tasks
    - Test the DAG
-
-5. Google Drive to GCS - [chapter 5](docs/chapter-05/README.md)
+5. Schedule your DAG - [chapter 5](docs/chapter-05/README.md)
+6. Google Drive to GCS - [chapter 5](docs/chapter-06/README.md)
 
    - Create a new DAG
    - Create a new connection for Google Drive via Service Account
    - Use `GoogleDriveToGCSOperator` to copy files from Google Drive to GCS
    - Test the DAG
 
-6. Working with `Sensor` - [chapter 6](docs/chapter-06/README.md)
+7. Working with `Sensor` - [chapter 6](docs/chapter-07/README.md)
 
    - `GoogleDriveFileSensor` to wait for a file to be uploaded to Google Drive
 
-7. Scraping Data from Githubs to Postgres - [chapter 7](docs/chapter-07/README.md)
+8. Scraping Data from Githubs to Postgres - [chapter 7](docs/chapter-08/README.md)
 
    - `SimpleHTTPOperator` to get data from Github API
    - `PostgresOperator` to insert data into Postgres
