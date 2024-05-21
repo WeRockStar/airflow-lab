@@ -36,6 +36,9 @@ graph LR
 
 Airflow is Workflow Orchestration, specifically designed tp batch-oriented workflows.
 
+
+Program wrokflows in Python, schedule them, and monitor them.
+
 ## Workflow as Code
 
 Allow you to define your workflows as code, which makes it easy to version control, test, and deploy.
@@ -62,15 +65,15 @@ with DAG(dag_id="demo", start_date=datetime(2022, 1, 1), schedule="0 0 * * *") a
 
 ## When to use Airflow?
 
-1. Ability to implement pipelines using Python code
+1. Ability to implement pipelines using `Python` code
 2. Airflow community has already developed a rich collection of extensions that allow Airflow to integrate with many different types of databases, cloud services, and so on
-3. Rich scheduling semantics allow you to run your pipelines at specific times, regular intervals, or in response to events
-4. Backfilling capabilities allow you to run historical jobs
-5. Web interface provides an easy way to monitor result of your pipelines
+3. Rich `scheduling semantics` allow you to run your pipelines at specific times, regular intervals, or in response to events
+4. Backfilling capabilities allow you to `run historical jobs`
+5. `Web interface` provides an easy way to monitor result of your pipelines
 
 ## When not to use Airflow?
 
-1. Airflow is not designed for real-time processing, it is batch-oriented
+1. Airflow is `not designed for real-time processing, it is batch-oriented`
 2. Highly dynamic pipelines, which added/removed tasks between every pipelines run
 3. Little or no Python experience
 

@@ -32,13 +32,12 @@ graph LR;
 
 <img src="./meme.jpeg" width="80%">
 
-## Airflow UI
-
-Start Docker
+## Start Airflow
 
 ```bash {"id":"01HYCYGNJXQ8W2M2T46X4MNRMF"}
-# Start the Airflow
 dokcker compose up -d
+
+# dags folder is mounted to the container
 ```
 
 # Access the Airflow UI
@@ -61,7 +60,7 @@ password: airflow
 ## Airflow Concepts
 
 - **Task**: A task is a parameterized instance of an Operator. It describes a single task in a workflow.
-- **Operator**: An Operator is a class that acts as a template for carrying out some work. Most Operators require a DAG object in their constructor. The DAG defines the task and the dependencies between tasks.
+- **Operator**: An Operator is `a class that acts as a template for carrying out some work`. Most Operators require a DAG object in their constructor. The DAG defines the task and the dependencies between tasks.
 
 [Back to Root](../../README.md)
 [Go to Next](../chapter-03/README.md)
