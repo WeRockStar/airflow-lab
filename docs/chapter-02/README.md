@@ -34,11 +34,15 @@ graph LR;
 
 ## Airflow UI
 
-```bash {"id":"01HYB7A2ZJ81JHKCN0XNXBPMKN"}
+Start Docker
+```bash
 # Start the Airflow
 dokcker compose up -d
+```
 
 # Access the Airflow UI
+
+```
 http://localhost:8080
 username: airflow
 password: airflow
