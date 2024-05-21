@@ -71,3 +71,6 @@ with DAG(dag_id="demo", start_date=datetime(2022, 1, 1), schedule="0 0 * * *") a
 1. Airflow is not designed for real-time processing, it is batch-oriented
 2. Highly dynamic pipelines, which added/removed tasks between every pipelines run
 3. Little or no Python experience
+
+
+[Back to Root](../chapter-01/README.md)

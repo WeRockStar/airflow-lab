@@ -11,9 +11,10 @@ from airflow import DAG
 ```
 
 ## 3. Define DAGs
+
 Define and refresh the Airflow UI and you should see the `first_dag` DAG
 
-```python
+```python {"id":"01HYCH0SEPC61S4SF9SM0Z7RBK"}
 from airflow import DAG
 
 with DAG(dag_id='first_dag') as dag:
@@ -22,7 +23,7 @@ with DAG(dag_id='first_dag') as dag:
 
 ## 4. Define Start Date
 
-```python
+```python {"id":"01HYCH0SEQX6K9PWGJFJRZYS2J"}
 from airflow import DAG
 from datetime import datetime
 
@@ -32,7 +33,7 @@ with DAG(dag_id='first_dag', start_date=datetime(2024, 5, 10), catchup=False) as
 
 ## 5. Add an Operator
 
-```python
+```python {"id":"01HYCH0SEQX6K9PWGJFK6TFXHH"}
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
@@ -50,6 +51,7 @@ with DAG(dag_id='first_dag', start_date=datetime(2024, 5, 10), catchup=False) as
 ```
 
 ## 6. Learn How Airflow UI Works
+
 1. Manual Trigger
 2. Graph View
 3. Log View (Specific Task)
@@ -64,7 +66,7 @@ Run and see the difference between `catchup=True` and `catchup=False` - Delete t
 
 Note: `catchup` is set to `True` by default
 
-```python
+```python {"id":"01HYCH0SEQX6K9PWGJFPP227JJ"}
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
@@ -80,3 +82,5 @@ with DAG(dag_id='first_dag', start_date=datetime(2024, 5, 10), catchup=True) as 
     )
 
 ```
+
+[Back to Root](../chapter-03/README.md)
