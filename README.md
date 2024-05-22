@@ -24,7 +24,6 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
       - Recent Tasks
       - DAG Runs
       - Graph View
-
    - DAGs
    - Operators
    - Tasks

@@ -30,7 +30,7 @@ graph LR;
 
 ## Mai Mee DAGs
 
-<img src="./meme.jpeg" width="80%">
+<img src="./meme.jpeg" width="70%">
 
 ## Start Airflow
 
@@ -64,7 +64,3 @@ password: airflow
 
 [Back to Root](../../README.md)
 [Go Next](../chapter-03/README.md)
-
-```yaml {"id":"01HYFEM9Z1ZYT1QKEG9EQ0XEKK"}
-
-```
