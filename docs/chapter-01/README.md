@@ -36,6 +36,9 @@ graph LR
 
 Airflow is Workflow Orchestration, specifically designed tp batch-oriented workflows.
 
+We can use Airflow to `create, schedule, and monitor any workflows.`
+
+Automate Workflows, Trigger Scripts, Schedule Jobs, etc.
 
 Program wrokflows in Python, schedule them, and monitor them.
 

@@ -11,16 +11,13 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 
 ## Lab Instructions
 
-0. Enable Test Connect - [chapter 0](docs/chapter-0/README.md)
-1. What's Airflow? - [chapter 1](docs/chapter-01/README.md)
-
+1. [Enable Test Connect](docs/chapter-0/README.md)
+2. [What's Airflow?](docs/chapter-01/README.md)
    - Workflow Orchestration
    - Data Pipeline
 
-2. Overview of Airflow UI and concepts  - [chapter 2](docs/chapter-02/README.md)
-
+3. [Overview of Airflow UI and concepts](docs/chapter-02/README.md)
    - Airflow UI
-
       - Pause/Unpause
       - Trigger DAG
       - Refresh
@@ -32,37 +29,34 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
    - Operators
    - Tasks
 
-3. Writing your first DAG (Single Operator) - [chapter 3](docs/chapter-03/README.md)
-
+4. [Writing your first DAG (Single Operator)](docs/chapter-03/README.md)
    - Create a new DAG with `PythonOperator`
    - Define the schedule
    - Define the tasks
    - Test the DAG
 
-4. Writing your second DAG (Multiple Operators) - [chapter 4](docs/chapter-04/README.md)
-
+5. [Writing your second DAG (Multiple Operators)](docs/chapter-04/README.md)
    - Create a new DAG with `PythonOperator`
    - Define dependencies between tasks
    - Test the DAG
 
-5. Schedule your DAG - [chapter 5](docs/chapter-05/README.md)
+6. [Schedule your DAG](docs/chapter-05/README.md)
    - Fixed Interval
    - Cron Expression
    - Preset Airflow Scheduler
-6. Google Drive to GCS - [chapter 6](docs/chapter-06/README.md)
 
+7. [Google Drive to GCS](docs/chapter-06/README.md)
    - Create a new DAG
    - Create a new connection for Google Drive via Service Account
    - Use `GoogleDriveToGCSOperator` to copy files from Google Drive to GCS
    - Test the DAG
 
-7. Working with `Sensor` - [chapter 7](docs/chapter-07/README.md)
-
+8. [Working with `Sensor`](docs/chapter-07/README.md)
    - `GoogleDriveFileSensor` to wait for a file to be uploaded to Google Drive
 
-8. Scraping Data from Githubs to Postgres - [chapter 8](docs/chapter-08/README.md)
-
+9. [Scraping Data from Githubs to Postgres](docs/chapter-08/README.md)
    - `SimpleHTTPOperator` to get data from Github API
    - `PostgresOperator` to insert data into Postgres
-9. Trigger Other DAGs - [chapter 9](docs/chapter-09/README.md)
+
+10. [Trigger Other DAGs](docs/chapter-09/README.md)
    - Trigger a DAG from another DAG
