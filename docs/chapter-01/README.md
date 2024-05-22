@@ -12,29 +12,44 @@ Process of moving data from one place to another, it can be transforming data, l
 
 Example 1: Source -> Destination
 
-```mermaid {"id":"01HYB7G78163BYDKA2K2KVZHGM"}
+```mermaid {"id":"01HYFVGQBKQ6VAZ0AYGX4Y9CF8"}
 graph LR
     A[Source] --> B[Destination]
 ```
 
-Example 2: ETL
+## ETL - Extract, Transform, Load
 
-```mermaid {"id":"01HYB7G78163BYDKA2K66VSWY6"}
+### Single Source
+
+```mermaid {"id":"01HYFVGQBKQ6VAZ0AYH06G28QC"}
 graph LR
     A[Extract] --> B[Transform] --> C[Load]
 ```
 
-Example 3: ETL with multiple sources
+### Multiple Sources
 
-```mermaid {"id":"01HYB7G78163BYDKA2K9BJFKBP"}
+```mermaid {"id":"01HYFVGQBKQ6VAZ0AYH3FDT2PX"}
 graph LR
     A[SharePoint] --> B[Transform] --> C[GCS]
     D[Google Drive] --> B
 ```
 
+## Reverse ETL
+
+Moving data from destination to source
+
+## Data Stack
+
+### ETL - Extract, Transform, Load
+#### EL - Extract, Load
+- Fivetran
+- Stitch
+#### T - Transform
+- dbt
+
 ## What's Airflow? (Again)
 
-Airflow is Workflow Orchestration, specifically designed tp batch-oriented workflows.
+Airflow is `Workflow` Orchestration, specifically designed tp batch-oriented workflows.
 
 We can use Airflow to `create, schedule, and monitor any workflows.`
 
