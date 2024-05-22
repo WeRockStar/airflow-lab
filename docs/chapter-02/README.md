@@ -30,7 +30,7 @@ graph LR;
 
 ## Mai Mee DAGs
 
-<img src="./meme.jpeg" width="70%">
+<img src="./meme.jpeg" width="65%">
 
 ## Start Airflow
 
@@ -50,6 +50,7 @@ password: airflow
 
 - Overview of DAGs on the Airflow UI
 - Pause/Unpause DAGs
+- `example-complex` DAG
 - Trigger a DAG
 - View the Graph View of a DAG
 - Recent Tasks
