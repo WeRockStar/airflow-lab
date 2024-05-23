@@ -41,11 +41,17 @@ Moving data from destination to source
 ## Data Stack
 
 ### ETL - Extract, Transform, Load
+
 #### EL - Extract, Load
+
 - Fivetran
 - Stitch
+- Airbyte
+
 #### T - Transform
+
 - dbt
+- Currently, Data Warehouses tools can do transformations
 
 ## What's Airflow? (Again)
 
