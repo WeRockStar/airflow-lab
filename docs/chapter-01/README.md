@@ -34,6 +34,14 @@ graph LR
     D[Google Drive] --> B
 ```
 
+## ELT - Extract, Load, Transform
+
+```mermaid
+graph LR
+    A[Extract] --> B[Load]
+    B --> C[Transform]
+```
+
 ## Reverse ETL
 
 Moving data from destination to source
@@ -51,7 +59,7 @@ Moving data from destination to source
 #### T - Transform
 
 - dbt
-- Currently, Data Warehouses tools can do transformations
+- Currently, some of Data Warehouses tools can do transformations
 
 ## What's Airflow? (Again)
 
@@ -59,7 +67,7 @@ Airflow is `Workflow` Orchestration, specifically designed tp batch-oriented wor
 
 We can use Airflow to `create, schedule, and monitor any workflows.`
 
-Automate Workflows, Trigger Scripts, Schedule Jobs, etc.
+<b>Automate Workflows, Trigger Scripts, Schedule, etc.</b>
 
 Program wrokflows in Python, schedule them, and monitor them.
 
@@ -106,6 +114,13 @@ with DAG(dag_id="demo", start_date=datetime(2022, 1, 1), schedule="0 0 * * *") a
 1. Airflow is `not designed for real-time processing, it is batch-oriented`
 2. Highly dynamic pipelines, which added/removed tasks between every pipelines run
 3. Little or no Python experience
+
+
+## Summary
+
+- **Airbyte**: Soliving Data Integration
+- **Airflow**: Solving Scheduling
+- **dbt**: Solving Data Transformations
 
 [Back to Root](../../README.md)
 [Go Next](../chapter-02/README.md)

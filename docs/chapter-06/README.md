@@ -24,9 +24,10 @@
 8. Optional: Test the connection (need to enable)
 
 ## 4. Create a new DAGs
-   Create a `drive_to_gcs.py` file in the `dags` folder
 
-```python
+Create a `drive_to_gcs.py` file in the `dags` folder
+
+```python {"id":"01HYJTRDQNECJNF4J3RK22P38Q"}
 from airflow import DAG
 from datetime import datetime
 
@@ -39,7 +40,7 @@ with DAG('sync_drive_to_gcs', start_date=datetime(2024, 5, 1),
 
 ## 5. Add GoogleDriveToGCSOperator
 
-```python
+```python {"id":"01HYJTRDQNECJNF4J3RP90ZS24"}
 from airflow import DAG
 from datetime import datetime
 
@@ -65,4 +66,4 @@ with DAG('sync_drive_to_gcs', start_date=datetime(2024, 5, 1),
 ## 6. Test the DAG
 
 [Back to Root](../../README.md)
-[Go to Next](../chapter-07/README.md)
+[Go Next](../chapter-07/README.md)
