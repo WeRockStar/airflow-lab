@@ -23,22 +23,30 @@ graph LR
 
 ### Single Source
 
-```mermaid {"id":"01HYFVGQBKQ6VAZ0AYH06G28QC"}
+```mermaid {"id":"01HYMEVRH2ZN32PFVH7RXD8JMT"}
 graph LR
     A[Extract] --> B[Transform] --> C[Load]
 ```
 
 ### Multiple Sources
 
-```mermaid {"id":"01HYFVGQBKQ6VAZ0AYH3FDT2PX"}
+```mermaid {"id":"01HYMEVRH2ZN32PFVH7VSXAXHA"}
 graph LR
-    A[SharePoint] --> B[Transform] --> C[GCS]
-    D[Google Drive] --> B
+    A[SharePoint] --> B[Extract] --> C[Transform] --> D[Load] --> E[Warehouse]
+    F[Google Drive] --> B
+```
+
+```mermaid {"id":"01HYMFNKKCD6Y9NQQ072AC8FY2"}
+graph LR
+    A[Source] --> B[ETL]
+    B --> C[Destination]
+    C --> D[BI]
+    D --> E[Dashboard]
 ```
 
 ## ELT - Extract, Load, Transform
 
-```mermaid
+```mermaid {"id":"01HYMFNKKCD6Y9NQQ076016Z6V"}
 graph LR
     A[Extract] --> B[Load]
     B --> C[Transform]
@@ -46,7 +54,13 @@ graph LR
 
 ## Reverse ETL
 
-Moving data from destination to source
+Moving data from destination (Data Warehouse) to source (CRM, Marketing Automation, etc.)
+
+```mermaid {"id":"01HYMFNKKCD6Y9NQQ076TE15XY"}
+graph LR
+    A[Destination] --> B[ETL]
+    B --> C[Source]
+```
 
 ## Data Stack
 
@@ -117,12 +131,17 @@ with DAG(dag_id="demo", start_date=datetime(2022, 1, 1), schedule="0 0 * * *") a
 2. Highly dynamic pipelines, which added/removed tasks between every pipelines run
 3. Little or no Python experience
 
-
 ## Summary
 
-- **Airbyte**: Soliving Data Integration
+- **Airbyte**: Soliving Data Integration (Extract, Load)
 - **Airflow**: Solving Scheduling
-- **dbt**: Solving Data Transformations
+- **dbt**: Solving Data Transformations (Transform)
+
+<img src="./tools.png" width="60%">
+
+<img src="./data-stack.png" width="60%">
+
+Reference: [The new modern data stack Airbyte Airflow DBT](https://www.youtube.com/watch?v=l48zwwRSGeA&ab_channel=ApacheAirflow)
 
 [Back to Root](../../README.md)
 [Go Next](../chapter-02/README.md)
