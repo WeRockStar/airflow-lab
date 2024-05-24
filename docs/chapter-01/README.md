@@ -137,9 +137,9 @@ with DAG(dag_id="demo", start_date=datetime(2022, 1, 1), schedule="0 0 * * *") a
 - **Airflow**: Solving Scheduling
 - **dbt**: Solving Data Transformations (Transform)
 
-<img src="./tools.png" width="60%">
+<img src="./tools.png" width="70%">
 
-<img src="./data-stack.png" width="60%">
+<img src="./data-stack.png" width="70%">
 
 Reference: [The new modern data stack Airbyte Airflow DBT](https://www.youtube.com/watch?v=l48zwwRSGeA&ab_channel=ApacheAirflow)
 
