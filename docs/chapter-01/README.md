@@ -6,6 +6,8 @@ Apache Airflow is Workflow Orchestration, It allows you to program, schedule, an
 
 Workflow Orchestration is the process of triggering and monitoring the status of tasks; nothing more, nothing less.
 
+<img src="orchestrate.jpeg" width="60%">
+
 ## Data Pipelines
 
 Process of moving data from one place to another, it can be transforming data, loading data, etc.
@@ -67,7 +69,7 @@ Airflow is `Workflow` Orchestration, specifically designed tp batch-oriented wor
 
 We can use Airflow to `create, schedule, and monitor any workflows.`
 
-<b>Automate Workflows, Trigger Scripts, Schedule, etc.</b>
+**Automate Workflows, Trigger Scripts, Schedule, etc.**
 
 Program wrokflows in Python, schedule them, and monitor them.
 
