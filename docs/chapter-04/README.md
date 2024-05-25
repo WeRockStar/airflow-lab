@@ -13,6 +13,7 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
 
+# Change first_dag to second_dag
 with DAG(dag_id='first_dag', start_date=datetime(2024, 5, 10), catchup=False) as dag:
 
     def print_hello():
@@ -57,7 +58,7 @@ with DAG(dag_id='second_dag', start_date=datetime(2024, 5, 10), catchup=False) a
 
 ## 5. Define Relationships
 
-Note: Apply and See Graph View
+Note: Apply and look at the Graph View
 
 ```python {"id":"01HYCH15TDF6P9S5JE204EPCQT"}
 run_this >> run_again
@@ -69,7 +70,7 @@ Operators are classes that are used to define the task. Task is an instance of a
 
 ## 7. Add more operators
 
-Note: Refresh and See Graph View
+Note: Refresh and look at the Graph View
 
 ```python {"id":"01HYCH15TDF6P9S5JE21GX3WT6"}
 from airflow import DAG

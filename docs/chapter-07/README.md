@@ -12,13 +12,14 @@ Create  a `sensor.py` python file in the `dags` folder
 
 Copy code from `drive_to_gcs.py` and paste it in the `sensor.py` file
 
-```python
+```python {"id":"01HYPZPMPBC5SCV84XCCV3EE6G"}
 from airflow import DAG
 from datetime import datetime
 
 from airflow.providers.google.cloud.transfers.gdrive_to_gcs import GoogleDriveToGCSOperator
 
-with DAG('sync_drive_to_gcs', start_date=datetime(2024, 5, 1),
+# Change DAGs ID drive_to_gcs to sensor
+with DAG('drive_to_gcs', start_date=datetime(2024, 5, 1),
          schedule_interval='@daily',
          tags=["XXXX"],
          catchup=False) as dag:
@@ -39,7 +40,7 @@ with DAG('sync_drive_to_gcs', start_date=datetime(2024, 5, 1),
 
 Change the DAGs ID to `sensor`
 
-```python
+```python {"id":"01HYPZPMPBC5SCV84XCFREC3DV"}
 with DAG('sensor', start_date=datetime(2024, 5, 1),
          schedule_interval='@daily',
          tags=["XXXX"],
@@ -50,7 +51,7 @@ with DAG('sensor', start_date=datetime(2024, 5, 1),
 
 Add a `GoogleDriveFileSensor` operator to the DAGs
 
-```python
+```python {"id":"01HYPZPMPBC5SCV84XCH9QD707"}
 
 from airflow.providers.google.suite.sensors.drive import GoogleDriveFileExistenceSensor
 
@@ -66,9 +67,9 @@ detect_file = GoogleDriveFileExistenceSensor(
 
 ## 5. Set Task Dependencies
 
-Set the task dependencies
+Set the task dependencies on Graph View
 
-```python
+```python {"id":"01HYPZPMPBC5SCV84XCJR8SXP9"}
 
 detect_file >> sync_drive_to_gcs
 

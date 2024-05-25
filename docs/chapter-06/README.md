@@ -31,7 +31,7 @@ Create a `drive_to_gcs.py` file in the `dags` folder
 from airflow import DAG
 from datetime import datetime
 
-with DAG('sync_drive_to_gcs', start_date=datetime(2024, 5, 1),
+with DAG('drive_to_gcs', start_date=datetime(2024, 5, 1),
          schedule_interval='@daily',
          tags=["XXXX"],
          catchup=False) as dag:
@@ -46,7 +46,7 @@ from datetime import datetime
 
 from airflow.providers.google.cloud.transfers.gdrive_to_gcs import GoogleDriveToGCSOperator
 
-with DAG('sync_drive_to_gcs', start_date=datetime(2024, 5, 1),
+with DAG('drive_to_gcs', start_date=datetime(2024, 5, 1),
          schedule_interval='@daily',
          tags=["XXX"],
          catchup=False) as dag:
