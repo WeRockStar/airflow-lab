@@ -27,3 +27,16 @@ Copy the `airflow.cfg` file from the container to the host machine.
 ```bash
 docker cp <container_namme>:/opt/airflow/airflow.cfg .
 ```
+
+## Start Flower UI
+
+Flower is a web-based tool for monitoring and administrating Celery clusters. To start the Flower UI, run the following command:
+
+```bash
+docker-compose --profile flower up
+
+# Or try this
+docker compose down && docker-compose --profile flower up
+```
+
+Note: The Flower UI will be available at `http://localhost:5555`
