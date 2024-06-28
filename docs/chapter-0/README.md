@@ -19,3 +19,11 @@ By default, test connection will disable to enable that, adding `AIRFLOW__CORE__
 ## Disable Example DAGs
 
 To disable the example DAGs, set `AIRFLOW__CORE__LOAD_EXAMPLES` to `False`.
+
+## Copy airflow.cfg
+
+Copy the `airflow.cfg` file from the container to the host machine.
+
+```bash
+docker cp <container_namme>:/opt/airflow/airflow.cfg .
+```
