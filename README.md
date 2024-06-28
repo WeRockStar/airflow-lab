@@ -72,3 +72,9 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 13. [Dataset - Data-aware scheduling](docs/chapter-12/README.md) - In Progress
     - Trigger DAG based on the data availability
     - Wait for many datasets to be available
+
+14. [Celery Executor (Local)](docs/chapter-13/README.md) - In Progress
+    - Monitor the task execution with Flower UI (To enable Flower UI, see [chapter-0](docs/chapter-0/README.md))
+    - Add more workers to the Celery Executor
+      - Duplicate `airflow-worker` service in `docker-compose.yml` and rename it
+      - Restart Docker
