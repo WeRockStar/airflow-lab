@@ -56,9 +56,15 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 8. [Working with `Sensor`](docs/chapter-07/README.md)
    - `GoogleDriveFileSensor` to wait for a file to be uploaded to Google Drive
 
-9.  [Scraping Data from Githubs to Postgres](docs/chapter-08/README.md)
+9. [Scraping Data from Githubs to Postgres](docs/chapter-08/README.md)
    - `SimpleHTTPOperator` to get data from Github API
    - `PostgresOperator` to insert data into Postgres
 
 10. [Trigger Other DAGs](docs/chapter-09/README.md)
-   - Trigger a DAG from another DAG
+    - Trigger a DAG from another DA
+
+11. [Task Decorators](docs/chapter-10/README.md) - In Progress
+    - `@task` decorator
+  
+12. [Testing](docs/chapter-11/README.md) - In Progress
+    - Unit Testing
