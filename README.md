@@ -14,6 +14,9 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 1. [Configuration](docs/chapter-0/README.md)
    - Lightweight Airflow setup with Docker
    - Enable Test button in Airflow UI
+   - Disable Example DAGs
+   - Copy Airflow Configuration
+   - Enable Flower UI
 
 2. [What's Airflow?](docs/chapter-01/README.md)
    - Workflow Orchestration
