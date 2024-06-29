@@ -68,7 +68,7 @@ This lab is designed to help you get familiar with Apache Airflow. You will lear
 
 11. [Task Decorators](docs/chapter-10/README.md) - In Progress
     - `@task` decorator
-  
+
 12. [Testing](docs/chapter-11/README.md) - In Progress
     - Unit Testing
 

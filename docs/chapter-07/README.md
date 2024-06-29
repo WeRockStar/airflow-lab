@@ -23,7 +23,7 @@ with DAG('drive_to_gcs', start_date=datetime(2024, 5, 1),
          schedule_interval='@daily',
          tags=["XXXX"],
          catchup=False) as dag:
-         
+
     sync_drive_to_gcs = GoogleDriveToGCSOperator(
         task_id='sync_drive_to_gcs',
         gcp_conn_id='gcp',
