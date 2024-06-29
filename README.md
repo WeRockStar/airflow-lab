@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This lab is designed to help you get familiar with Apache Airflow. You will learn how to create a simple DAG, schedule it, and monitor its execution.
+This lab is designed to help you get familiar with `Apache Airflow`. You will learn how to create a simple DAG, schedule it, and monitor its execution.
+
+**Note**: You can use `Astro CLI` to create a new Airflow project. For more information, see [Astro CLI](https://www.astronomer.io/docs/astro/cli/get-started-cli)
 
 ## Prerequisites
 
