@@ -36,7 +36,7 @@ from airflow.operators.bash import BashOperator
 
 with DAG('trigger_me', start_date=datetime(2024, 5, 1),
          catchup=False) as dag:
-    
+
     sing_song = BashOperator(
         task_id='hello_world',
         bash_command='echo "$message นกกาโบยบิน"',
@@ -44,7 +44,8 @@ with DAG('trigger_me', start_date=datetime(2024, 5, 1),
     )
 
     sing_song
-    
+
 ```
 
 [Back to Root](../../README.md)
+[Go Next](../chapter-10/README.md)
