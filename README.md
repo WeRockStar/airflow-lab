@@ -14,7 +14,7 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
 ## Lab Instructions
 
 1. [Configuration](docs/chapter-0/README.md)
-   - Lightweight Airflow setup with Docker
+   - Lightweight Airflow setup with Docker, see `docker-compose.lite.yaml`
    - Enable Test button in Airflow UI
    - Disable Example DAGs
    - Copy Airflow Configuration

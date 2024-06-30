@@ -5,12 +5,14 @@
 This setup is for local development and testing purposes. It is not recommended for production use.
 
 - Replace `CeleryExecutor` to `LocalExecutor`
-- Disable Celery related configurations
+- Remove **Celery** related configurations
   - `redis`
   - `flower`
   - `airflow-triggerer`
+  - `airflow-worker`
   - `AIRFLOW__CELERY__RESULT_BACKEND`
   - `AIRFLOW__CELERY__BROKER_URL`
+  - see `docker-compose.lite.yaml` for the result
 
 ## Enable Test Connection
 
