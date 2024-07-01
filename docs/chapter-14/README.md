@@ -43,11 +43,11 @@ with DAG(
     task1 >> task2
 ```
 
-## 2. Fan-in and Fan-out
+## 2. Fan-out and Fan-in
 
-In Airflow, you can define multiple dependencies between tasks. This is known as fan-in and fan-out.
+In Airflow, you can define multiple dependencies between tasks. This is known as **fan-out** and **fan-in**.
 
-In the following example, we have three tasks, `task1`, `task2`, and `task3`. We want `task2` and `task3` to run after `task1` has completed (success). To do this, we use the `>>` operator to define the dependencies between the tasks.
+In the following example, we have three tasks, `task1`, `task2`, and `task3`. We want `task2` and `task3` to run after `task1` has completed (successful). To do this, we use the `>>` operator to define the dependencies between the tasks.
 
 ### Fan-out
 
@@ -118,14 +118,18 @@ with DAG(
 
     def _taskDB():
         print('Hello, DB')
+
     def _taskAPI():
         print('Hello, API')
+
     def _taskCombine():
         print('Hello, Combined Source')
+
     taskDB = PythonOperator(
         task_id='task1',
         python_callable=_taskDB
     )
+
     taskAPI = PythonOperator(
         task_id='task2',
         python_callable=_taskAPI
