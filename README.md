@@ -83,3 +83,9 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
     - Add more workers to the Celery Executor
       - Duplicate `airflow-worker` service in `docker-compose.yml` and rename it
       - Restart Docker
+
+15. [Dependencies between Tasks](docs/chapter-14/README.md) - In Progress
+    - Basic define dependencies between tasks
+    - Fan-in and Fan-out
+    - Trigger Rules
+    - Conditional Trigger
