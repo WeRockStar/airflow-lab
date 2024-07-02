@@ -170,6 +170,18 @@ In Airflow, you can define conditional triggers to control when a task is trigge
 
 Here is an example of how to use the `BranchPythonOperator` to trigger a task based on a condition and define **Trigger Rules** to control when the task is triggered:
 
+```mermaid
+graph LR
+    start --> pick_file
+    start --> load_db
+    pick_file --> load_new_file
+    pick_file --> load_old_file
+    load_new_file --> join
+    load_old_file --> join
+    join --> end_task
+    load_db --> end_task
+```
+
 ```python
 from airflow import DAG
 import datetime
