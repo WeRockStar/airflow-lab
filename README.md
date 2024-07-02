@@ -68,7 +68,7 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
 10. [Trigger Other DAGs](docs/chapter-09/README.md)
     - Trigger a DAG from another DA
 
-11. [Task Decorators](docs/chapter-10/README.md) - In Progress
+11. [Task Decorators - Taskflow API](docs/chapter-10/README.md) - In Progress
     - `@task` decorator
 
 12. [Testing](docs/chapter-11/README.md) - In Progress
