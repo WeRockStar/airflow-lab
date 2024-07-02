@@ -11,6 +11,8 @@ graph LR
     task1 --> task2
 ```
 
+Create a new DAG file `basic_dependencies.py`:
+
 ```python
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
@@ -56,6 +58,8 @@ graph LR
     task1 --> task2
     task1 --> task3
 ```
+
+Create a new DAG file `fanout_dependencies.py`:
 
 ```python
 from airflow import DAG
@@ -103,6 +107,8 @@ graph LR
     taskDB --> taskCombineSource
     taskAPI --> taskCombineSource
 ```
+
+Create a new DAG file `fanin_dependencies.py`:
 
 ```python
 from airflow import DAG
