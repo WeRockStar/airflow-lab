@@ -165,3 +165,66 @@ none_skipped: no parent is in a skipped state, i.e. all parents are in a success
 dummy: dependencies are just for show, trigger at will
 
 ## 4. Conditional Trigger
+
+In Airflow, you can define conditional triggers to control when a task is triggered based on a condition. This can be done using the `BranchPythonOperator` and `TriggerDagRunOperator`.
+
+Here is an example of how to use the `BranchPythonOperator` to trigger a task based on a condition and define **Trigger Rules** to control when the task is triggered:
+
+```python
+from airflow import DAG
+import datetime
+from airflow.operators.python import PythonOperator
+from airflow.operators.dummy import DummyOperator
+from airflow.operators.python import BranchPythonOperator
+
+with DAG(
+    dag_id="conditional_task",
+    start_date=datetime.datetime(2022, 1, 1),
+    catchup=False,
+    schedule_interval="@daily",
+) as dag:
+
+    start = DummyOperator(task_id="start")
+
+    def _load_db_data():
+        print("Loading data")
+
+    load_db = PythonOperator(
+        task_id="load_db",
+        python_callable=_load_db_data,
+    )
+
+    def _pick_file():
+        if datetime.datetime.now().day % 2 == 0:
+            return "load_old_file"
+        else:
+            return "load_new_file"
+
+    pick_file = BranchPythonOperator(
+        task_id="pick_file",
+        python_callable=_pick_file,
+    )
+
+    def _load_new_file_data():
+        print("Loading file")
+
+    load_new_file = PythonOperator(
+        task_id="load_new_file",
+        python_callable=_load_new_file_data,
+    )
+
+    def _load_old_file_data():
+        print("Loading file")
+
+    load_old_file = PythonOperator(
+        task_id="load_old_file",
+        python_callable=_load_old_file_data,
+    )
+
+    join = DummyOperator(task_id="join", trigger_rule="none_failed")
+
+    end = DummyOperator(task_id="end")
+
+    start >> [load_db] >> end
+    start >> pick_file >> [load_old_file, load_new_file] >> join >> end
+```
