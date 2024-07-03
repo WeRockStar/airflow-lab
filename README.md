@@ -74,6 +74,7 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
 12. [Testing](docs/chapter-11/README.md) - In Progress
     - Unit Testing
     - DAG Integrity Testing
+    - `dag.test()` method
 
 13. [Dataset - Data-aware scheduling](docs/chapter-12/README.md) - In Progress
     - Trigger DAG based on the data availability
