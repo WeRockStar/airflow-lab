@@ -72,3 +72,7 @@ def test_dag_integrity(dag_file):
 **Note**: Duplicate task id in the DAG, test also fails
 
 ## Unit Testing
+
+## Using dag.test() method
+
+`dag.test()` method is used to test the DAGs in Airflow. It is a method of the DAG class.
