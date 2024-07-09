@@ -1,5 +1,7 @@
 # Configurations
 
+**TL;DR** use `docker-compose.lite.yaml` for a lightweight Airflow setup.
+
 ## Lightweight Airflow on Local
 
 This setup is for local development and testing purposes. It is not recommended for production use.
