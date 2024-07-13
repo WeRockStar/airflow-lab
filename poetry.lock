@@ -381,13 +381,13 @@ openlineage = ["apache-airflow-providers-openlineage"]
 
 [[package]]
 name = "apache-airflow-providers-common-sql"
-version = "1.14.1"
+version = "1.14.2"
 description = "Provider package apache-airflow-providers-common-sql for Apache Airflow"
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "apache_airflow_providers_common_sql-1.14.1-py3-none-any.whl", hash = "sha256:529d3a7496384bd5fab53ac0ed82d2ebcaabcd977217bf4b2abe0a2d4a415317"},
-    {file = "apache_airflow_providers_common_sql-1.14.1.tar.gz", hash = "sha256:f648c0478010f633927faf2867a01585924b5f754f1399a8e13cc4af85e20602"},
+    {file = "apache_airflow_providers_common_sql-1.14.2-py3-none-any.whl", hash = "sha256:49d9c9389489be4085499b3706ccbe2853584ade5bda91082c7d9242b80048e8"},
+    {file = "apache_airflow_providers_common_sql-1.14.2.tar.gz", hash = "sha256:c536f6e42347c035a0f5103c0ca5aa0ff4671cbd01af89b2d9602ebb2b8fae42"},
 ]
 
 [package.dependencies]
@@ -401,13 +401,13 @@ pandas = ["pandas (>=1.5.3,<2.2)", "pandas (>=2.1.2,<2.2)"]
 
 [[package]]
 name = "apache-airflow-providers-fab"
-version = "1.2.0"
+version = "1.2.1"
 description = "Provider package apache-airflow-providers-fab for Apache Airflow"
 optional = false
 python-versions = "~=3.8"
 files = [
-    {file = "apache_airflow_providers_fab-1.2.0-py3-none-any.whl", hash = "sha256:d931bfd79e5667043ec9818b546c3dca1df8251baa9288a94d0b6468e38606f9"},
-    {file = "apache_airflow_providers_fab-1.2.0.tar.gz", hash = "sha256:79e9e84e0e91e557191f37f92e1c2f8784f511b3cc5c02cc985433b1a747b897"},
+    {file = "apache_airflow_providers_fab-1.2.1-py3-none-any.whl", hash = "sha256:6782709e96d83213a4c996062a5b5a93809a4cc90db1cf038f93033bca053b8f"},
+    {file = "apache_airflow_providers_fab-1.2.1.tar.gz", hash = "sha256:d36d0eda3fd599a817832e1d8137ee41467b37dde26cc773cd64285fbd5bd79d"},
 ]
 
 [package.dependencies]
@@ -3038,13 +3038,13 @@ test = ["pytest"]
 
 [[package]]
 name = "setuptools"
-version = "70.2.0"
+version = "70.3.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "setuptools-70.2.0-py3-none-any.whl", hash = "sha256:b8b8060bb426838fbe942479c90296ce976249451118ef566a5a0b7d8b78fb05"},
-    {file = "setuptools-70.2.0.tar.gz", hash = "sha256:bd63e505105011b25c3c11f753f7e3b8465ea739efddaccef8f0efac2137bac1"},
+    {file = "setuptools-70.3.0-py3-none-any.whl", hash = "sha256:fe384da74336c398e0d956d1cae0669bc02eed936cdb1d49b57de1990dc11ffc"},
+    {file = "setuptools-70.3.0.tar.gz", hash = "sha256:f171bab1dfbc86b132997f26a119f6056a57950d058587841a0082e8830f9dc5"},
 ]
 
 [package.extras]
