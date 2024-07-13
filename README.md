@@ -9,7 +9,12 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
 ## Prerequisites
 
 - Basic knowledge of Python
+  - Variables
+  - Functions
+  - Control Flow
+  - arg and kwargs
 - Basic knowledge of Docker
+  - `docker compose up` and `down` is good enough
 
 ## Lab Instructions
 
