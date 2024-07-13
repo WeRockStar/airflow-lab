@@ -27,6 +27,8 @@ with DAG(dag_id='first_dag', start_date=datetime(2024, 5, 10), catchup=False) as
 
 ## 3. Edit DAGs ID
 
+Replace `dag_id='first_dag'` with `dag_id='second_dag'`
+
 ```python {"id":"01HYCH15TDF6P9S5JE1Z2WXKA6"}
 with DAG(dag_id='second_dag', start_date=datetime(2024, 5, 10), catchup=False) as dag:
 ```
