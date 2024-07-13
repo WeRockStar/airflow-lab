@@ -17,7 +17,7 @@ dag = DAG(
 
 ## 2. Cron Schedule
 
-For example, '0 0 * * *' would schedule the DAG to run daily at midnight
+For example, `'0 0 * * *'` would schedule the DAG to run daily at midnight
 
 ```python {"id":"01HYCQ6TM1PC4C06T3TEQE3QXF"}
 dag = DAG(

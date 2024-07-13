@@ -76,3 +76,6 @@ def test_dag_integrity(dag_file):
 ## Using dag.test() method
 
 `dag.test()` method is used to test the DAGs in Airflow. It is a method of the DAG class.
+
+[Back to Root](../../README.md)
+[Go Next](../chapter-12/README.md)

@@ -76,3 +76,6 @@ with DAG(
 ```
 
 Actually, It's make `PythonOperator` more readable and easier to understand and no need to wrap the task in a function and pass it to the `PythonOperator`.
+
+[Back to Root](../../README.md)
+[Go Next](../chapter-11/README.md)
