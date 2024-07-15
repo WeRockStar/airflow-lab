@@ -63,14 +63,17 @@ graph LR;
 
 ```bash
 dokcker compose up -d
-
 # dags folder is mounted to the container
+
+# start lightweight Airflow
+docker compose -f docker-compose.light.yml up -d
 ```
 
 ## Access the Airflow UI
 
+[http://localhost:8080](http://localhost:8080)
+
 ```yaml
-http://localhost:8080
 username: airflow
 password: airflow
 ```
