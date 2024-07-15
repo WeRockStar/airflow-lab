@@ -1,5 +1,7 @@
 # Write Second DAGs with Multiple Operators
 
+In this chapter, you will learn how to create your second DAGs with multiple operators.
+
 ## 1. Create a new DAG
 
 Create a `second_dag.py` file in the `dags` folder
@@ -8,7 +10,7 @@ Create a `second_dag.py` file in the `dags` folder
 
 `catchup=False` is used to prevent backfilling of the DAGs.
 
-```python {"id":"01HYCH15TDF6P9S5JE1XC01CG8"}
+```python
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
@@ -60,21 +62,23 @@ with DAG(dag_id='second_dag', start_date=datetime(2024, 5, 10), catchup=False) a
 
 ## 5. Define Relationships
 
-Note: Apply and look at the Graph View
+Apply this code to define the relationship between the operators.
 
-```python {"id":"01HYCH15TDF6P9S5JE204EPCQT"}
+```python
 run_this >> run_again
 ```
 
+Note: You can define the relationship between the operators using `<<` or `>>` operators, but keep it consistent is a key.
+
 ## 6. How Operators and Task Different?
 
-Operators are classes that are used to define the task. Task is an instance of an operator.
+**Operators** are classes that are used to define the task. **Task** is an instance of an operator. By the way, in term of user perspective, they are the same, but in Airflow, they are different.
 
 ## 7. Add more operators
 
 Note: Refresh and look at the Graph View
 
-```python {"id":"01HYCH15TDF6P9S5JE21GX3WT6"}
+```python
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime
