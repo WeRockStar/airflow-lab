@@ -2,15 +2,42 @@
 
 ## Airflow Components
 
-- **Web Server**: The Web Server is the UI for Airflow. provides a UI to manage DAGs and the Airflow environment.
-- **Scheduler**: The Scheduler is the core of Airflow. It triggers tasks and manages their dependencies. The Scheduler chooses how to prioritize the running and execution of tasks within the system.
+- **Web Server**: The Web Server is the **UI for Airflow**. provides a UI to manage DAGs and the Airflow environment.
+- **Scheduler**: The Scheduler is the core of Airflow. It **triggers** tasks and manages their dependencies. The Scheduler chooses how to prioritize the running and execution of tasks within the system.
 - **Executor**: The Executor is the mechanism by which `task instances` get run. The concept of an executor is a pluggable component of Airflow. Airflow comes with many executors out of the box and you can also provide your own.
-- **Metadata Database**: The Metadata Database is the persistent store for metadata related to the state of workflows and tasks in Airflow. The database, often referred to as the metadata database, also stores credentials, connections, history, and configuration.
-- __DAGs (Directed Acyclic Graphs)__: A DAG is a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies. A DAG’s definition is written in Python files that are placed in Airflow’s DAG_FOLDER.
+- **Metadata Database**: The Metadata Database is the **persistent store** for metadata related to the state of workflows and tasks in Airflow. The database, often referred to as the metadata database, also stores credentials, connections, history, and configuration.
+- **DAGs (Directed Acyclic Graphs)**: A DAG is a **collection of all the tasks** you want to run, organized in a way that **reflects their relationships and dependencies**. A DAG’s definition is written in Python files that are placed in Airflow’s DAG_FOLDER.
 
-## Directed Acyclic Graphs (DAGs) ✅
+## DAGs (Directed Acyclic Graphs)
 
-```mermaid {"id":"01HYB7A2ZHE5F91V7YYTRYK84H"}
+### Pipeline as Graph
+
+- **Nodes**: Tasks
+- **Edges**: Dependencies
+
+```mermaid
+graph LR;
+    A[Task1] --- B[Task2]
+    B --- C[Task3]
+    C --- D[Task4]
+```
+
+### Directed Graphs
+
+- **Directed**: Edges have a direction
+
+```mermaid
+graph LR;
+    A[Task1] --> B[Task2]
+    B --> C[Task3]
+    C --> D[Task4]
+```
+
+### Directed Acyclic Graphs (DAGs) ✅
+
+- **Acyclic**: No cycles
+
+```mermaid
 graph LR;
     A[Task1] --> B[Task2]
     B --> C[Task3]
@@ -19,30 +46,30 @@ graph LR;
     D --> E
 ```
 
-## Not DAGs ❌
+### Not DAGs ❌
 
-```mermaid {"id":"01HYB7A2ZHE5F91V7YYVPSKFAG"}
+```mermaid
 graph LR;
     A[Task1] --> B[Task2]
     B --> C[Task3]
     C --> A
 ```
 
-## Mai Mee DAGs
+### Mai Mee DAG (aka. แดก)
 
-<img src="./meme.jpeg" width="65%">
+<img src="./meme.jpeg" width="65%" alt="meme for DAGs">
 
 ## Start Airflow
 
-```bash {"id":"01HYCYGNJXQ8W2M2T46X4MNRMF"}
+```bash
 dokcker compose up -d
 
 # dags folder is mounted to the container
 ```
 
-# Access the Airflow UI
+## Access the Airflow UI
 
-```yaml {"id":"01HYCYGNJXQ8W2M2T46XVT6CM4"}
+```yaml
 http://localhost:8080
 username: airflow
 password: airflow
