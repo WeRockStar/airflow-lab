@@ -24,7 +24,7 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
    - Enable Test button in Airflow UI
    - Disable Example DAGs
    - Copy Airflow Configuration
-   - Enable Flower UI
+   - Enable **Flower** UI
 
 2. [What's Airflow?](docs/chapter-01/README.md)
 
@@ -47,14 +47,15 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
 4. [Writing your first DAG (Single Operator)](docs/chapter-03/README.md)
 
    - Create a new DAG with `PythonOperator`
-   - Define the schedule
-   - Define the tasks
+   - Defining DAG
+     - Schedule
+     - Task
    - Test the DAG
 
 5. [Writing your second DAG (Multiple Operators)](docs/chapter-04/README.md)
 
    - Create a new DAG with `PythonOperator`
-   - Define dependencies between tasks
+   - Define **dependencies** between tasks
    - Test the DAG
 
 6. [Schedule your DAG](docs/chapter-05/README.md)
@@ -66,7 +67,7 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
 7. [Google Drive to GCS](docs/chapter-06/README.md)
 
    - Create a new DAG
-   - Create a new connection for Google Drive via Service Account
+   - Create a new **connection** for Google Drive via Service Account
    - Use `GoogleDriveToGCSOperator` to copy files from Google Drive to GCS
    - Test the DAG
 
@@ -81,11 +82,14 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
 
 10. [Trigger Other DAGs](docs/chapter-09/README.md)
 
-    - Trigger a DAG from another DA
+    - Learn how to trigger another DAG
+    - Getting to know `TriggerDagRunOperator`
 
-11. [Task Decorators - Taskflow API](docs/chapter-10/README.md) - In Progress
+11. [Task Decorators - Taskflow API](docs/chapter-10/README.md)
 
-    - `@task` decorator
+    - Simplified way to define tasks
+    - Getting to know `@task` decorator
+    - Using `@task` to define taks like `PythonOperator`
 
 12. [Testing](docs/chapter-11/README.md) - In Progress
 

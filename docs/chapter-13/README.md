@@ -6,12 +6,12 @@ Executors are the mechanism by which `task instances` get run.
 
 ### Executors in Airflow
 
-Local Executors
+#### Local Executors
 
 - Local Executor
 - Sequential Executor
 
-Remote Executors
+#### Remote Executors
 
 - CeleryExecutor
 - CeleryKubernetesExecutor

@@ -9,7 +9,7 @@ Create a `trigger_me.py` file in the `dags` folder
 - Append `TriggerDagRunOperator` at the last of operator
 - Revise relation between operators
 
-```python {"id":"01HYPZRSMWQ072TJ6JEG5B1MY1"}
+```python
 from airflow.operators.dagrun_operator import TriggerDagRunOperator
 
 ...
@@ -27,7 +27,7 @@ from airflow.operators.dagrun_operator import TriggerDagRunOperator
 
 ### 3. Write the `trigger_me.py` file
 
-```python {"id":"01HYPZRSMWQ072TJ6JEJ7PSEA3"}
+```python
 from airflow import DAG
 from datetime import datetime
 
