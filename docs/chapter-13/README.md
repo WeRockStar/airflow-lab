@@ -27,3 +27,6 @@ Executors are the mechanism by which `task instances` get run.
 5. Duplicate `airflow-worker` service in `docker-compose.yaml` and rename it to `airflow-worker-2`.
 6. Restart the Docker containers via `docker-compose up -d`.
 7. Looking at the `flower` UI, we'll see the new `celery` worker.
+
+[Back to Root](../../README.md)
+[Go Next](../chapter-14/README.md)
