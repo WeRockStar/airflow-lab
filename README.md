@@ -15,7 +15,7 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
   - arg and kwargs
 - Basic knowledge of Docker
   - `docker compose up` and `down` is good enough
-- poetry
+- poetry: Package Manager for Python
   - `poetry install --no-root` to install dependencies
 
 ## Lab Instructions
