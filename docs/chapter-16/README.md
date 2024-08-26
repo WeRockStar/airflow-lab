@@ -91,7 +91,9 @@ with DAG(
 
 ## SLA Callback
 
-Modify `dag_sla.py` file, add `sla_callback` function, and pass it to the `sla_miss_callback` parameter in the DAG.:
+Modify `dag_sla.py` file, add `sla_callback` function, and pass it to the `sla_miss_callback` parameter in the DAG.
+
+Reference: [Apache Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html#slas)
 
 ```python
 from airflow import DAG
