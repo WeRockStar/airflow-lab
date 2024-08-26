@@ -121,3 +121,7 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
 16. [Managing Complex Tasks with TaskGroup](./docs/chapter-15/README.md) - In Progress
     - Group tasks together
     - Define dependencies between TaskGroups
+17. [SLA - Service Level Agreement](./docs/chapter-16/README.md) - In Progress
+    - Define SLA for a DAG
+    - Define SLA for a task
+    - Define SLA callback
