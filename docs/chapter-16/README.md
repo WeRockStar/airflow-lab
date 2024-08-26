@@ -91,4 +91,31 @@ with DAG(
 
 ## SLA Callback
 
+Modify `dag_sla.py` file, add `sla_callback` function, and pass it to the `sla_miss_callback` parameter in the DAG.:
+
+```python
+from airflow import DAG
+from airflow.operators.dummy_operator import DummyOperator
+from datetime import datetime
+from datetime import timedelta
+
+def sla_callback(dag, task_list, blocking_task_list, slas, blocking_tis):
+    print(
+        "SLA missed with informations: ",
+        {
+            "dag": dag,
+            "task_list": task_list,
+            "blocking_task_list": blocking_task_list,
+            "slas": slas,
+            "blocking_tis": blocking_tis,
+        },
+    )
+
+with DAG(
+    ...,
+    sla_miss_callback=sla_callback,
+) as dag:
+    ...
+```
+
 [Back to Root](../../README.md)
