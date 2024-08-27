@@ -2,11 +2,11 @@
 
 ## What is SLA?
 
-SLA stands for Service Level Agreement. It is a contract between a service provider and a customer that defines the level of service expected from the service provider.
+SLA stands for Service Level Agreement. It is a **contract between a service provider and a customer** that defines the **level of service** expected from the service provider.
 
 ## SLA in Apache Airflow
 
-In the context of Apache Airflow, SLA is a way to define the maximum time a task or a DAG should take to complete. If the task or DAG takes more time than the defined SLA, it will be marked as failed.
+In the context of Apache Airflow, SLA is a way to define the **maximum time a task or a DAG should take to complete**. If the task or DAG takes more time than the defined SLA, it will be marked as failed.
 
 ## SLA in DAG
 
@@ -51,6 +51,8 @@ with DAG(
     start >> task >> end
 ```
 
+Note: `time.sleep(65)` is used to simulate a task that takes more time than the defined SLA.
+
 ## SLA in Task
 
 Create an `task_sla.py` file and add the following code:
@@ -88,6 +90,8 @@ with DAG(
 
     start >> task >> end
 ```
+
+Note: `task.sla = sla` is used to define SLA for a specific task.
 
 ## SLA Callback
 
