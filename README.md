@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This lab is designed to help you get familiar with `Apache Airflow`. You will learn how to create a simple DAG, schedule it, and monitor its execution.
+This lab is designed to help you get familiar with `Apache Airflow`. You will learn how to create a simple DAG, schedule it, monitor its execution, and more.
 
 **Note**: You can use `Astro CLI` to create a new Airflow project. For more information, see [Astro CLI](https://www.astronomer.io/docs/astro/cli/get-started-cli)
 
@@ -12,10 +12,10 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
   - Variables
   - Functions
   - Control Flow
-  - arg and kwargs
+  - `arg` and `kwargs`
 - Basic knowledge of Docker
   - `docker compose up` and `down` is good enough
-- poetry: Package Manager for Python
+- [poetry](https://python-poetry.org/docs/#installation): Package Manager for Python
   - `poetry install --no-root` to install dependencies
 
 ## Lab Instructions
@@ -29,9 +29,8 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
    - Enable **Flower** UI
 
 2. [What's Airflow?](docs/chapter-01/README.md)
-
-   - Workflow Orchestration
    - Data Pipeline
+   - Workflow Orchestration
 
 3. [Overview of Airflow UI and concepts](docs/chapter-02/README.md)
 
