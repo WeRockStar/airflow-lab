@@ -1,5 +1,7 @@
 # Airflow Lab
 
+Learning by doing and thinking about the code we write.
+
 ## Introduction
 
 This lab is designed to help you get familiar with `Apache Airflow`. You will learn how to create a simple DAG, schedule it, monitor its execution, and more.
