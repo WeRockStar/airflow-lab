@@ -8,6 +8,8 @@ SLA stands for Service Level Agreement. It is a **contract between a service pro
 
 In the context of Apache Airflow, SLA is a way to define the **maximum time a task or a DAG should take to complete**. If the task or DAG takes more time than the defined SLA, it will be marked as failed.
 
+You can view all the SLA misses in the `SLA Misses`: **Browse -> SLA Misses.**
+
 ## SLA in DAG
 
 To define SLA for a DAG, you can use the `sla` parameter in the `default_args` dictionary. In this case, the SLA will be applied to all the tasks in the DAG.
@@ -52,6 +54,8 @@ with DAG(
 ```
 
 Note: `time.sleep(65)` is used to simulate a task that takes more time than the defined SLA.
+
+<img src="./sla.png" width="80%" alt="meme for DAGs">
 
 ## SLA in Task
 
