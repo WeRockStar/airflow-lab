@@ -55,7 +55,7 @@ with DAG(
 
 Note: `time.sleep(65)` is used to simulate a task that takes more time than the defined SLA.
 
-<img src="./sla.png" width="80%" alt="meme for DAGs">
+![SLA Diagram](./sla.png)
 
 ## SLA in Task
 
