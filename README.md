@@ -121,10 +121,10 @@ I'd try to go beyond the basic concepts and cover some advanced topics like `Tas
     - Trigger Rules
     - Conditional Trigger
 
-16. [Managing Complex Tasks with TaskGroup](./docs/chapter-15/README.md) - In Progress
+16. [Managing Complex Tasks with TaskGroup](./docs/chapter-15/README.md)
     - Group tasks together
     - Define dependencies between TaskGroups
-17. [SLA - Service Level Agreement](./docs/chapter-16/README.md) - In Progress
+17. [SLA - Service Level Agreement](./docs/chapter-16/README.md)
     - Define SLA for a DAG
     - Define SLA for a task
     - Define SLA callback
