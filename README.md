@@ -1,10 +1,12 @@
 # Airflow Lab
 
-Learning by doing and thinking about the code we write.
+Learning by doing and thinking about the code we written.
 
 ## Introduction
 
 This lab is designed to help you get familiar with `Apache Airflow`. You will learn how to create a simple DAG, schedule it, monitor its execution, and more.
+
+I'd try to go beyond the basic concepts and cover some advanced topics like `TaskGroup`, `TaskFlow API`, `SLA`, `Data-aware scheduling`, `Kubernetes Executor`, and more.
 
 **Note**: You can use `Astro CLI` to create a new Airflow project. For more information, see [Astro CLI](https://www.astronomer.io/docs/astro/cli/get-started-cli)
 
