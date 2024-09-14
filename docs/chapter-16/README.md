@@ -55,8 +55,6 @@ with DAG(
 
 Note: `time.sleep(65)` is used to simulate a task that takes more time than the defined SLA.
 
-![SLA Diagram](./sla.png)
-
 ## SLA in Task
 
 Create an `task_sla.py` file and add the following code:
@@ -127,5 +125,9 @@ with DAG(
 ) as dag:
     ...
 ```
+
+### Checkpoint
+
+![SLA Diagram](./sla.png)
 
 [Back to Root](../../README.md)

@@ -72,9 +72,9 @@ with DAG(
     start >> extract >> transform >> load >> end
 ```
 
-**Result:**
-![Task Group Diagram](./task-group.png)
+### Checkpoint
 
+![Task Group Diagram](./task-group.png)
 
 [Back to Root](../../README.md)
 [Go Next](../chapter-16/README.md)
