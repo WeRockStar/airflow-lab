@@ -126,3 +126,7 @@ This lab is designed to help you get familiar with `Apache Airflow`. You will le
     - Define SLA for a DAG
     - Define SLA for a task
     - Define SLA callback
+18. [Airflow on Kubernetes](./docs/chapter-17/README.md) - In Progress
+    - Deploy Airflow on Kubernetes Cluster using `Helm` and `Kind`
+    - Use Kubernetes Executor
+    - Use KubernetesPodOperator
