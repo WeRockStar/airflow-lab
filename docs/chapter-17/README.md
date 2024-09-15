@@ -83,8 +83,10 @@ Information on how to set a static webserver secret key can be found here:
 https://airflow.apache.org/docs/helm-chart/stable/production-guide.html#webserver-secret-key
 ```
 
-## Delete Kind Cluster
+## Uninstall and Delete Kind Cluster
 
 ```bash
+helm uninstall airflow
+
 kind delete cluster --name airflow-cluster
 ```
