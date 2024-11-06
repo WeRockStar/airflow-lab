@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
 apache-airflow = "2.10.3"
+acryl-datahub-airflow-plugin = "^0.14.1.6"
 
 
 [build-system]

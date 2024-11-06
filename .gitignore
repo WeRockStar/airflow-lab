@@ -2,3 +2,4 @@ logs
 dags
 config
 .venv
+airflow.cfg
