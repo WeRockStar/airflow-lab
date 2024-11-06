@@ -11,6 +11,8 @@ In this chapter, we will learn how to build an Airflow Docker image using Poetry
 
 ## Build Airflow Docker Image
 
+I have created a `Dockerfile` to build an Airflow Docker image with Poetry. see [Dockerfile](./../../Dockerfile) for more details.
+
 ```bash
 docker build -t airflow-poetry:2.10.3 .
 ```
