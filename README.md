@@ -33,6 +33,7 @@ I'd try to go beyond the basic concepts and cover some advanced topics like `Tas
    - Enable **Flower** UI
 
 2. [What's Airflow?](docs/chapter-01/README.md)
+
    - Data Pipeline
    - Workflow Orchestration
 
@@ -132,3 +133,6 @@ I'd try to go beyond the basic concepts and cover some advanced topics like `Tas
     - Deploy Airflow on Kubernetes Cluster using `Helm` and `Kind`
     - Use Kubernetes Executor
     - Use KubernetesPodOperator
+19. [Working with DataHub](./docs/chapter-18/README.md) - In Progress
+    - Setup DataHub on Local Development
+    - Emit Metadata to DataHub
