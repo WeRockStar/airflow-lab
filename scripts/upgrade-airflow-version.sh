@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read -p "Enter Airflow version (ex. 2.10.2): " airflow_version
+read -p "Enter Airflow version (ex. 2.10.3): " airflow_version
 
-pattern="2.10.4"
+pattern="2.10.3"
 
 working_directory="./"
 

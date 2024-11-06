@@ -134,5 +134,9 @@ I'd try to go beyond the basic concepts and cover some advanced topics like `Tas
     - Use Kubernetes Executor
     - Use KubernetesPodOperator
 19. [Working with DataHub](./docs/chapter-18/README.md) - In Progress
+
     - Setup DataHub on Local Development
     - Emit Metadata to DataHub
+
+20. [Build Airflow Docker Image](./docs/chapter-19/README.md)
+    - Build Airflow Docker Image (Poetry for Package Management)
