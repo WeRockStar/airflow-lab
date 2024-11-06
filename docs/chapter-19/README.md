@@ -20,10 +20,33 @@ Ensure you're in virtual environment:
 poetry shell
 ```
 
-Start DataHub using Docker Compose:
+Start DataHub via `datahub` CLI:
 
 ```bash
 datahub docker quickstart -f docker-compose-datahub.yaml
+# ☕️ take time to start and see the output below
+```
+
+Console output:
+
+```bash
+[+] Running 12/12
+ ✔ Container datahub-zookeeper-1               Healthy                                                                                  0.5s
+ ✔ Container datahub-mysql-1                   Healthy                                                                                  0.5s
+ ✔ Container datahub-broker-1                  Healthy                                                                                  1.6s
+ ✔ Container datahub-mysql-setup-1             Exited                                                                                   6.6s
+ ✔ Container datahub-schema-registry-1         Healthy                                                                                  1.5s
+ ✔ Container datahub-elasticsearch-1           Healthy                                                                                  0.5s
+ ✔ Container datahub-kafka-setup-1             Exited                                                                                   4.5s
+ ✔ Container datahub-elasticsearch-setup-1     Exited                                                                                   4.9s
+ ✔ Container datahub-datahub-upgrade-1         Exited                                                                                  28.7s
+ ✔ Container datahub-datahub-gms-1             Healthy                                                                                 29.2s
+ ✔ Container datahub-datahub-frontend-react-1  Started                                                                                  0.6s
+ ✔ Container datahub-datahub-actions-1         Started                                                                                  0.6s
+............
+✔ DataHub is now running
+Ingest some demo data using `datahub docker ingest-sample-data`,
+or head to http://localhost:9002 (username: datahub, password: datahub) to play around with the frontend.
 ```
 
 ## DataHub Plugin
