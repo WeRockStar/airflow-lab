@@ -1,40 +1,43 @@
-# Airflow Docker Image
+# Working with DataHub
 
 ## Introduction
 
-In this chapter, we will learn how to build an Airflow Docker image using Poetry for package management. We will use the official Airflow Docker image as the base image and install the required dependencies using Poetry.
+DataHub is a data platform that provides a unified view of data across an organization. It is designed to be a central place for **data discovery, collaboration, and governance**. DataHub is built on top of a graph database and provides a rich set of features for managing metadata, lineage, and data quality.
 
-## Prerequisites
+## Start Airflow
 
-- `Docker Desktop` installed on your machine
-- `Dockerfile` at the root of the project
-
-## Build Airflow Docker Image
+Note: Ensure Airflow image is build from `Dockerfile`. see [chapter-18](./../chapter-18/README.md) for more details.
 
 ```bash
-docker build -t airflow-poetry:2.10.3 .
+docker-compose -f docker-compose.lite.yaml up
 ```
 
-## Let's Try
+## Start DataHub on Local
 
-1. Look at `.env` file and update the `AIRFLOW_IMAGE_NAME`
+Ensure you're in virtual environment:
 
-   Currently, it is set to `apache/airflow:2.10.3`, you can change it to `airflow-poetry:2.10.3`.
+```bash
+poetry shell
+```
 
-   ```bash
-   AIRFLOW_IMAGE_NAME=apache/airflow:2.10.3
-   AIRFLOW_UID=50000
-   ```
+Start DataHub using Docker Compose:
 
-   Change it to and ensure environment variables are set correctly. Run `source .env` to set the environment variables.
+```bash
+datahub docker quickstart -f docker-compose-datahub.yaml
+```
 
-   ```bash
-   AIRFLOW_IMAGE_NAME=airflow-poetry:2.10.3
-   AIRFLOW_UID=50000
-   ```
+## DataHub Plugin
 
-2. Run the Airflow Docker image
+I have added a DataHub plugin to Airflow. Look at `pyproject.toml` file to see the dependencies.
 
-   ```bash
-   docker-compose -f docker-compose.lite.yaml up
-   ```
+```toml
+[tool.poetry.dependencies]
+...
+acryl-datahub-airflow-plugin = "^0.14.1.6"
+```
+
+## Create DataHub Connection
+
+```bash
+airflow connections add  --conn-type 'datahub-rest' 'datahub_rest_default' --conn-host 'http://datahub-gms:8080'
+```

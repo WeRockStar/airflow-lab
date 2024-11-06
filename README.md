@@ -130,13 +130,16 @@ I'd try to go beyond the basic concepts and cover some advanced topics like `Tas
     - Define SLA for a task
     - Define SLA callback
 18. [Airflow on Kubernetes](./docs/chapter-17/README.md) - In Progress
+
     - Deploy Airflow on Kubernetes Cluster using `Helm` and `Kind`
     - Use Kubernetes Executor
     - Use KubernetesPodOperator
-19. [Working with DataHub](./docs/chapter-18/README.md) - In Progress
+
+19. [Build Airflow Docker Image](./docs/chapter-18/README.md)
+
+    - Build Airflow Docker Image (Poetry for Package Management)
+
+20. [Working with DataHub](./docs/chapter-19/README.md) - In Progress
 
     - Setup DataHub on Local Development
     - Emit Metadata to DataHub
-
-20. [Build Airflow Docker Image](./docs/chapter-19/README.md)
-    - Build Airflow Docker Image (Poetry for Package Management)
