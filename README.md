@@ -19,8 +19,10 @@ I'd try to go beyond the basic concepts and cover some advanced topics like `Tas
   - `arg` and `kwargs`
 - Basic knowledge of Docker
   - `docker compose up` and `down` is good enough
-- [poetry](https://python-poetry.org/docs/#installation): Package Manager for Python
+- [Poetry](https://python-poetry.org/docs/#installation): Package Manager for Python
   - `poetry install --no-root` to install dependencies
+- Some parts of the lab require basic knowledge of `Kubernetes` and `Helm`
+  - You can skip those parts if you are not familiar with them
 
 ## Lab Instructions
 
@@ -126,9 +128,11 @@ I'd try to go beyond the basic concepts and cover some advanced topics like `Tas
     - Group tasks together
     - Define dependencies between TaskGroups
 17. [SLA - Service Level Agreement](./docs/chapter-16/README.md)
+
     - Define SLA for a DAG
     - Define SLA for a task
     - Define SLA callback
+
 18. [Airflow on Kubernetes](./docs/chapter-17/README.md) - In Progress
 
     - Deploy Airflow on Kubernetes Cluster using `Helm` and `Kind`
